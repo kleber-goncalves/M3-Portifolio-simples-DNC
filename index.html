@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Portfólio Simples</title>
+</head>
+<body>
+<header class="container">
+        <h1 id="titulo-Header">Portfólio</h1>
+        <nav id="navbar-ListaMenu">
+            <ul>
+                <li><a href="#meus-Servicos">Meus Serviços</a></li>
+                <li><a href="#secao-Formulario">Fale Comigo</a></li>
+                <li><a href="#secao-Portfolio">Portfólio</a></li>
+            </ul>
+        </nav>
+</header>
+    <main class="margin-top">
+        <article id="secao-Inicial-Conteiner" class="container">
+            <section id="secao-Inicial">
+                <h2 id="titulo-Inicial">Olá, meu nome <br> é Maria</h2>
+                <p class="txts">Sou programadora e gostaria de apresentar meu <br> trabalho para você através deste portfólio.</p>
+                <button class="buttons">
+                    <a href="#meus-Servicos"><span>Meus Serviços</span></a>
+                </button>
+            </section>
+
+            <figure class="img-Secao-Inicial" >
+                <img src="img/imagem-Secao-Inicial.svg" alt="Seção Inicial" loading="lazy">
+            </figure>
+        </article>
+
+        <section id="secao-Clientes" class="container margin-top">
+            <div id="secao-Clientes-Texto">
+                <p>Alguns dos<br>meus clientes</p>
+            </div>
+            <div class="clientes-slider cliente-img-container">
+                <div class="cliente-img">
+                    <img src="img/apple-Cliente-1.svg" alt="Cliente 1" loading="lazy">
+                </div>
+                <div class="cliente-img">
+                    <img src="img/slack-Cliente-2.svg" alt="Cliente 2" loading="lazy">
+                </div>
+                <div class="cliente-img">
+                    <img src="img/spotify-Cliente-3.svg" alt="Cliente 3" loading="lazy">
+                </div>
+                <!-- Clones para efeito infinito -->
+                <div class="cliente-img display-none">
+                    <img src="img/apple-Cliente-1.svg" alt="Cliente 1 clone" loading="lazy">
+                </div>
+                <div class="cliente-img display-none">
+                    <img src="img/slack-Cliente-2.svg" alt="Cliente 2 clone" loading="lazy">
+                </div>
+                <div class="cliente-img display-none">
+                    <img src="img/spotify-Cliente-3.svg" alt="Cliente 3 clone" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="meus-Servicos">
+                <p class="txts-red">Conheça</p>
+                <h2 class="titulo-Secao">Meus Serviços</h2>
+                <p class="txts">Vou ajudar a sua empresa a<br>alcançar grandes resultados.</p>
+            </div>
+
+            <section id="secao-Servicos" class="container margin-top">
+                <div class="servicos">
+                    <img src="img/consoltoria-Servicos-1.svg" alt="Consultoria" loading="lazy">
+                    <h3 class="titulo-Servicos">Consultoria</h3>
+                    <p class="txts">Te ajudo a organizar sua empresa<br>e melhorar seus resultados.</p>
+                </div>
+                <div class="servicos">
+                    <img src="img/email-Servicos-2.svg" alt="Email Marketing" loading="lazy">
+                    <h3 class="titulo-Servicos">Email Marketing</h3>
+                    <p class="txts">Gerenciar campanhas é difícil.<br>Conte comigo para te ajudar.</p>
+                </div> 
+                <div class="servicos">
+                    <img src="img/criacao-sites-Servicos-3.svg" alt="Criação de Sites" loading="lazy">
+                    <h3 class="titulo-Servicos">Criação de Sites</h3>
+                    <p class="txts">Desenvolvo seu site inteiro<br>do zero e te entrego prontinho.</p>
+                </div>
+            </section>
+
+            <article id="secao-Formulario" class="container">
+                <figure class="img-Secao-Inicial">
+                    <img src="img/img-Formulario.svg" alt="Seção formulário" loading="lazy">
+                </figure>
+                <div class="conteiner-Formulario">
+                    <p class="txts-red">Economize seu tempo</p>
+                    <h3 class="titulo-Secao">Ganhe mais dinheiro</h3>
+                    <p class="txts">Digite aqui seu endereço de e-mail. Eu entrarei em<br>contato para fornecer um diagnóstico gratuito.</p>
+                    
+                    <form action="" id="formulario">
+                        <input type="email" placeholder="E-mail">
+                        <span class="form-hover-msg">Este formulário não está funcionando no momento.</span>
+                        <button class="buttons"><span>Enviar</span></button>
+                    </form>
+                </div>
+            </article>
+
+        <article id="secao-Portfolio" >
+            <div> 
+                <p class="txts-red">Conheça meu trabalho</p>
+                <h2 class="titulo-Secao">Portfólio</h2>
+            </div>
+
+            <section id="secao-Img-Portfolio" class="container">
+                <div>
+                    <img src="img/portfolio-1.svg" alt="Portfólio 1" loading="lazy">
+                </div>
+                <div>
+                    <img src="img/portfolio-2.svg" alt="Portfólio 2" loading="lazy">
+                </div>
+                <div>
+                    <img src="img/portfolio-3.svg" alt="Portfólio 3" loading="lazy">
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+
+</body>
+</html>
