@@ -68,7 +68,7 @@ body {
 .img-Secao-Inicial {
     width: 100%;
     height: auto;
-    margin-left: 0px;
+    margin-left: 50px;
     margin-right: 0;
 }
 
@@ -332,26 +332,13 @@ li a {
     }
     #secao-Clientes {
         display: flex;
-        flex-direction: row;
-        align-items: center;      /* Alinha verticalmente os dois blocos */
-        gap: 32px;  
+        justify-content: center;
+        margin-top: 10%;
     }
-    #secao-Clientes-Texto {
-        min-width: 140px;         /* Garante largura mínima para o texto */
-        text-align: left;
-    }
-    #secao-Clientes p {
-        font-size: 16px;
-        line-height: 24px;
-        margin: 0;
-    }
-    .clientes-slider.cliente-img-container {
-        flex: 1;
+    .cliente-img-container {
+        margin-left: 50px;
         display: flex;
-        flex-direction: row;
-        gap: 24px;                /* Espaço entre as imagens */
-        justify-content: space-between;
-        align-items: center;
+        gap: 40px;
     }
     #meus-Servicos {
         margin-top: 40px;
@@ -412,50 +399,27 @@ li a {
 }
 
 @media (max-width: 500px) {
-    header.container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 50px;
-    }
     #titulo-Header {
-        order: -1;
-        margin-bottom: 20px;
+        font-size: 20px;
+        margin-top: 30px;
+        line-height: 28px;
         text-align: center;
     }
     #navbar-ListaMenu {
-        order: 0;
+        margin-top: 30px;
+        text-align: center;
         width: 100%;
+        margin-bottom: 70px;
     }
     #navbar-ListaMenu ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        gap: 8px;
-        justify-items: center;
-        align-items: center;
+        display: inline-block;
         padding: 0;
-        margin: 0;
-        list-style: none;
+        margin: 0 auto;
     }
-    #navbar-ListaMenu ul li:nth-child(1) {
-        /*  li fale comigo */
-        grid-column: 1;
-        grid-row: 2;
-        justify-self: end;
+    #navbar-ListaMenu li {
+        margin-left: 10px;
     }
-    #navbar-ListaMenu ul li:nth-child(2) {
-        /*  li meus serviços */
-        grid-column: 2;
-        grid-row: 2;
-        justify-self: start;
-    }
-    #navbar-ListaMenu ul li:nth-child(3) {
-        /*  li portfolio */
-        grid-column: 1 / 3; /* Ocupa as duas colunas */
-        grid-row: 1;
-        justify-self: center;
-    }
+
     #secao-Inicial-Conteiner {
         display: flex;
         flex-direction: column;
@@ -506,22 +470,7 @@ li a {
         flex-direction: column;
         align-items: center;
     }
-    #secao-Formulario .img-Secao-Inicial {
-        display: flex;
-        justify-content: center; /* Centraliza horizontalmente */
-        align-items: center;
-        width: 100%;
-        margin: 0 auto 20px auto; /* Centraliza e dá espaço abaixo */
-        max-width: 320px; /* Limita a largura máxima igual à seção inicial */
-        order: -1; /* Opcional: coloca a imagem acima do texto, se desejar */
-    }
-    #secao-Formulario .img-Secao-Inicial img {
-        display: block;
-        margin: 0 auto;
-        max-width: 90vw; /* Responsivo para telas pequenas */
-        width: 100%;
-        height: auto;
-    }
+
     #formulario .buttons {
         width: 40%;
     }
@@ -592,11 +541,10 @@ li a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0;
     }
     #titulo-Header {
         order: -1;
-        margin-bottom: 9px;
+        margin-bottom: 10px;
         text-align: center;
     }
     #navbar-ListaMenu {
@@ -614,81 +562,27 @@ li a {
         margin: 0;
         list-style: none;
     }
-    #navbar-ListaMenu ul li:nth-child(1) {
-        /*  li fale comigo */
+    #navbar-ListaMenu ul li:nth-child(1) { /*  li fale comigo */
         grid-column: 1;
         grid-row: 2;
         justify-self: end;
     }
-    #navbar-ListaMenu ul li:nth-child(2) {
-        /*  li meus serviços */
+    #navbar-ListaMenu ul li:nth-child(2) { /*  li meus serviços */
         grid-column: 2;
         grid-row: 2;
         justify-self: start;
     }
-    #navbar-ListaMenu ul li:nth-child(3) {
-        /*  li portfolio */
+    #navbar-ListaMenu ul li:nth-child(3) { /*  li portfolio */
         grid-column: 1 / 3; /* Ocupa as duas colunas */
         grid-row: 1;
         justify-self: center;
     }
-    .margin-top {
-        margin-top: 0;
-    }
-    #secao-Inicial-Conteiner {
-        flex-direction: column; /* Empilha texto e imagem */
-        align-items: center; /* Centraliza horizontalmente */
-        justify-content: center;
-        gap: 16px; /* Espaço entre texto e imagem */
-    }
-    #secao-Inicial-Conteiner .img-Secao-Inicial {
-        order: -1; /* Coloca a imagem acima do texto */
-        margin: 0 auto; /* Centraliza a imagem */
-        max-width: 320px; /* Limita a largura máxima da imagem */
-    }
-    .img-Secao-Inicial {
-        display: flex;
-        justify-content: center; /* Centraliza a imagem dentro do figure */
-        align-items: center;
-        width: 100%;
+    #secao-Inicial-Conteiner img {
         margin: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
     }
-    .img-Secao-Inicial img {
-        display: block;
-        margin: 0 auto; /* Centraliza a imagem */
-        max-width: 90vw; /* Garante responsividade */
-        width: 100%;
-        height: auto;
-    }
-    #secao-Inicial .txts {
-        font-size: 0.95rem; /* Deixa o texto um pouco menor */
-        text-align: center; /* Centraliza o texto */ /* Garante que o texto não ultrapasse a tela */ /* Centraliza horizontalmente */
-        line-height: 1.4; /* Melhora a leitura em telas pequenas */
-        margin-bottom: 50px;
-    }
-    .txts br {
-        display: none;
-    } /* Remove quebras de linha para telas pequenas */
-    .buttons {
-        width: 170px;
-        height: 48px;
-    }
-}
-
-/* Animação mais leve e fluida */
-@keyframes fadeInScale {
-    0% {
-        opacity: 0;
-        transform: scale(0.97);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-.img-animada {
-    animation: fadeInScale 1.2s cubic-bezier(0.4, 0.2, 0.2, 1) both;
 }
 
 /* FLUIDEZ E LEVEZA */
