@@ -5,7 +5,7 @@ Este projeto é uma demonstração de portfólio pessoal, ideal para apresentar 
 ## Demonstração
 
 Acesse a versão online (em breve hospedada no Netlify):  
-[https://meu-portifolio.netlify.app](https://meu-portifolio.netlify.app)
+[https://portiforlio-simples.netlify.app/](https://portiforlio-simples.netlify.app/)
 
 ---
 
